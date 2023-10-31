@@ -248,6 +248,34 @@ based on how they’re built!
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* LLM Parameters: Temperature
+-----------------------------
+Now that we’ve learned about the many facets of text generation using language models, we can look at some of ways in which we can tweak them to get better results. Whether one is working 
+with LLM’s via chat or API, there are parameters in the models that allows us to play around with the probabilities involved in the models. One of the most used parameters is temperature.
+
+Temperature is a parameter that controls the sharpness of the probability distribution that the model generates its outcomes from. This means that it increases the probability of the 
+higher probability outcomes and decreases the probability of the lower probability outcomes, i.e., the distribution becomes narrower as shown to the right.
+
+Let’s understand this with an example. Suppose the input text is “The cat” and the probability distribution is as shown in the figure to the right. What will the next word be?
+
+* Low Temperature
+-----------------
+If we decreased the temperature, we’d make the probability distribution narrower, thus increasing the likelihood of higher probability outcomes and decreasing the likelihood of lower 
+probability outcomes. We can see how the already most probable word “chases” has its probability increased. Lower temperature implies that we get more deterministic outputs. Deterministic 
+means that the model tends to produce the same outcomes every time.
+
+* High Temperature
+------------------
+If we increased the temperature, we make the probability distribution wider, allowing for lower probability outcomes to become more possible. For instance, “eats” might take precedence 
+over chases. And increasing temperature further, the previously less probable “eats mango” might become more probable. One can see how increasing temperature might lead to more novel and 
+amusing outcomes. Often in LLM documentation, the parameter is described as the one that tunes for “more creative outcomes” or “increased randomness”.
+
+It is important to note that one must always verify that the output of a LLM is grounded in facts. A high probability does not indicate that the outcome is factually grounded. Thus low 
+temperature is no guarantee that the output of the model is correct! There are many other parameters in an LLM that allow us to play around with the frequency of the outputs, sampling, 
+etc, and you can learn about them in our LLM API course.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
