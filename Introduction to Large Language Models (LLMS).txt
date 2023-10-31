@@ -54,6 +54,81 @@ work!
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Detecting Patterns in Text
+----------------------------
+The quest to mathematically model language dates back to more than a hundred years. In 1913, mathematician A.A. Markov analyzed letters in a Russian novel and found that there were some 
+surprising patterns that could be captured by mathematics. Computer scientist and mathematician Claude Shannon followed up on this analysis a few decades later with a broad question about 
+language patterns: Can we predict the next letter given a series of letters?
+
+* Next Letter Predicton
+-----------------------
+For example, consider the XKCD comic shown to the right where there’s a three letter sequence “eru-”. There are only a few English language words that begin with this combination of 
+letters and none of them are very common. The words “erudite”, “erupt” and the less often used “eructate” are a few possible candidates, for instance.
+
+The context of the sentence also narrows down the possibilities for which word can occur next and still make sense.The appearance of “volcano” implies that some variation of the verb “erupt” might be an obvious choice here. The verb tense (in this case, present continuous) gives the final clue that the word “erupt” will appear in the form “erupting”.
+
+* Natural Language Processing (NLP)
+-----------------------------------
+The explanation above relied on familiarity with the English language. Specifically, we relied on the patterns in language we’ve picked up from reading and speaking to inform our thinking 
+as we solved this. Can we train an algorithm to do the same and possibly faster and on many sentences at once? The answer is an emphatic yes and this is the primary goal of the field of 
+“Natural Language Processing” (NLP)! To automate this process using a computer, we would need to come up with a way to turn this text into math.
+
+	Many of the initial steps in any NLP task are about standardizing things (i.e. treating language more like numbers, which lend themselves more easily to math) so that computers 
+	can do text analysis.
+
+* From Letters to Words to Tokens
+---------------------------------
+What is the simplest unit of language that text can be broken down to? A letter! A single letter unit is known as a “unigram”. The sentence “Oh my god, the volcano is eru-“ can be broken 
+down into a series of unigrams as follows: {o, h, _, m, y, _, g, o, d, _, t, h, e, _, v, o, l, c, a, n, o, _, i, s, _, e, r, u} where the dashes (_) represent blank spaces. We could also 
+break it up into two letter units, known as bigrams: where the units would look like: {oh, h_, _m, my, etc,} or three letter units, i.e. trigrams and ultimately n-letter units, known as 
+n-grams.
+
+The best choice of the length of the unit depends on the exact problem we’re trying to solve and there are many best practices to follow around this. Formalizing language this way allows 
+us to build a language model on a computer to predict the next best unigram, bigram or n-gram.
+
+Is it only letters that we can do this with? Words are a more natural unit of language and we could use them as our smallest unit. We can identify each word unit by the appearance of the 
+spaces between them. The Google n-gram viewer uses words as language units to give us statistical insights into the appearance of words in Google Books.
+
+We could also use groups of words or even subwords (like -ing, -ed, etc), often referred to as tokens in the context of language models.
+
+The table to the right shows what this might look like for the sentence in the comic. 
+
+* Instructions
+--------------
+Search the phrase “artificial intelligence” in Google Books’ n-gram viewer to view the history of the appearance of the phrase in the Google Books data base!
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
