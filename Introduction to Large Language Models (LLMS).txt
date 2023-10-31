@@ -161,6 +161,72 @@ frequency occurrence of “monkeys” after “what do” and divide it by sum o
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Compression: Solving the Curse of Dimensionality
+--------------------------------------------------
+
+Count tables can get huge!
+--------------------------
+The other issue that count-based language models run into is referred to as the curse of dimensionality. This means that as the corpus of text gets bigger, so does the count table we 
+would need to construct. To store and work with giant count tables requires enormous amounts of computing memory and speed. Suppose we had a document with a hundred words, and we wanted 
+to calculate the probability of every five-word sentence. The number of combinations we have would be 100^5 = 10 billion counts! We can see how this problem quickly scales with the size 
+of a text corpus.
+
+Compressing Text by Approximation
+---------------------------------
+Neural language models help solve the curse of dimensionality by compressing the text into smaller number of parameters, often referred to as the “weights” of a model. It does so by 
+trying to learn an approximation of the count table instead of the whole count table.
+
+One way to think about this is to imagine reducing a high resolution photo to a lower resolution image. This reduced image will be easier to store and access than the higher resolution 
+one and the extent to which it retains all the important features of the original image depends on the cleverness with which it is compressed! (The science fiction writer Ted Chiang 
+provides a layman’s explanation of this for ChatGPT in his excellent piece in the New Yorker.)
+
+Information Loss
+----------------
+If you’re wondering “Is there information loss in this process?”, the answer is yes, there is! Neural language models run the risk of sometimes assigning zero probabilities to text that 
+actually exists in the corpus, thus running into the unavoidable issue of information loss. However, it is compression that allows a neural language model to generalize in a manner that 
+produces novel/unseen text! This is because it allows semantic connections to be made between between (lion → predator), (predator → chasing prey) and (llama → prey) to assign a non-zero 
+probability to a sentence like “A lion is chasing a llama”.
+
+To summarize, neural language models:
+
+	. can assign zero probabilities to existing text (compression)
+	. can assign non-zero probabilities to unseen text (generalization)
+
+In other words, compression and generalization are two sides of the same coin! We will examine this deeper in a couple of exercises but before that, let’s look into how neural networks 
+are able to accomplish this feat.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
