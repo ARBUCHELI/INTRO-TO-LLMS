@@ -1,0 +1,91 @@
+# INTRODUCTION TO LARGE LANGUAGE MODELS (LLMS)
+----------------------------------------------
+
+* Chatbots, Language Models and the Birth of AI
+-----------------------------------------------
+This lesson is an introduction to Large Language Models (LLMs) and text-based Generative Artificial Intelligence (AI). These technologies power many sophisticated text-based AI 
+applications we see today, such as ChatGPT, released by the company OpenAI in late 2022. Before we jump into how today’s models function, we’re going to start back in 1966 to understand the history of chatbots, text generation, and the Turing test.
+
+* The ELIZA Effect
+------------------
+The first digital chatbot, ELIZA, was debuted on the Massachusetts Institute of Technology (MIT) campus in 1966. It was programmed using binary code by computer scientist Joseph 
+Weizenbaum. The program generated text by following a few simple rules. These rules were based on a pre-determined “script” that allowed it to assume a specific persona.
+
+For instance, the version of ELIZA that impressed staff and students alike at MIT was known as “DOCTOR”, a kind of barebones psychotherapist who would mirror back statements typed in by 
+the user of the program. So if someone typed in “I’m feeling X,” DOCTOR would respond with something like “What is making you feel X?”
+
+ELIZA was very successful in convincing people that they were interacting with a human and not a computer! So much so that there’s even a psychological effect named after the program, the 
+ELIZA effect. It refers to the tendency to unconsciously attribute “humanness” to (or anthropomorphize) computer behaviors.
+
+* The Turing Test
+-----------------
+Chatbots have come a long way since the days of ELIZA. From a computer science perspective, ELIZA and ChatGPT can both be said to pass what is known as the “Turing test”.
+
+In 1950, computer scientist Alan Turing wrote a landmark paper titled “Computing Machinery and Intelligence”, in which he investigated the question:
+
+	What does it mean for machines to think?
+
+He concluded that this question was fundamentally meaningless and said that the better question to ask would be:
+
+	Can a machine successfully imitate human behavior so that it might dupe a human?
+
+To answer this question, he devised a game. The “imitation game”, as he called it, has a human evaluator interacting with a machine and another human through a text-only channel. A 
+machine is said to do well at the imitation game if the human evaluator is convinced that they were interacting with another human and not a machine. The imitation game is referred to 
+today as the Turing test.
+
+* “AI”: what is it?
+-------------------
+The Turing test has been a cornerstone in computer science to assess the intelligence of a machine and a lot of the detail lies in the design of the test itself. Six years after Turing’s 
+paper was published, a group of scientists put together a proposal for a Summer Research Project on Artificial Intelligence (AI) at Dartmouth, often thought of historically as the moment 
+that birthed the field of AI.
+
+Instead of trying to define what AI is or is not, they sought to explain the fundamental assumption behind the pursuit of AI:
+
+	“The study is to proceed on the basis of the conjecture that every aspect of learning or any other feature of intelligence can in principle be so precisely described that a 
+	machine can be made to simulate it.”
+
+Specifically, they were interested in how language might be useful in this pursuit :
+
+	“An attempt will be made to find how to make machines use language, form abstractions and concepts, solve kinds of problems now reserved for humans, and improve themselves."
+
+From ELIZA to ChatGPT, there is indeed a marked increase in sophistication, nuance and complexity in the abilities demonstrated by language-based technologies. What has made this possible 
+was the move away from “rule-based” chatbots and towards language models that rely on neural networks to capture statistical regularities within language. Let’s dive into how these models 
+work!
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
