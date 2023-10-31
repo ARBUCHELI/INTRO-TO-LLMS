@@ -99,6 +99,34 @@ Search the phrase “artificial intelligence” in Google Books’ n-gram viewer
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Autoregressive Language Models
+--------------------------------
+We’ve seen in the previous exercise that the first step in any NLP task is to figure out how to turn text into numbers so we can do math with it. Before getting to the math, let’s think 
+about which tasks are well suited for NLP. Some well-known language-related tasks that NLP algorithms are involved in are
+
+	. translation (like in Google Translate)
+
+	. completing letter sequences (autocomplete, for instance)
+
+	. question-answer (customer service chatbots, for example)
+	
+	. sentiment analysis (used in content filters)
+
+While there are many methodologies in NLP to do these tasks, the quest to build an algorithmic system that can do all of these tasks and more excites NLP researchers the most. Such a 
+model is referred to as a language model. Since language is often the vehicle of human thought, the hope is that in building larger language models, an algorithmic system might exhibit a 
+kind of generalized intelligence that’s worthy of comparison to humans. (This is a big and interesting question on its own.)
+
+Language models can get large and complex but the modeling process begins with a very simple question: Given some text data to work with, how can one build an algorithm to predict the 
+next best thing to say? As it turns out, a model that answers this question well is capable of doing many other language-related tasks! The text data can come in many forms, say a book, 
+collection of articles, a set of websites, etc. It is often referred to as a “corpus” in NLP to indicate that it is likely gathered from many sources and digitally stored.
+
+The word autoregressive refers to statistical models that predict future values based on past values. It is used very often in the context of language models and it means that we’re using 
+previously occurring words (or word sequences) to predict the next best thing to say. The simplest way to build a language model from a text corpus is to build a giant lookup table. This 
+table would contains all possible word combinations appearing in the text and their frequency of appearing so we can easily lookup how likely it is that a given sentence occurs in the 
+text. Such a model is often referred to as a count-based language model.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
